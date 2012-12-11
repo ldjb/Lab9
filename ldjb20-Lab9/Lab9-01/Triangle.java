@@ -1,10 +1,17 @@
 public class Triangle extends Shape{
-	private double[] sides;
-	public Triangle() {
-		double[] sides = new double[3];
-		sides[0] = 1;
-		sides[1] = 2;
-		sides[2] = 3;
+
+	private double[] sides = new double[3];
+	
+	public Triangle(double[] paramSides) {
+		sides = paramSides;
+	}
+	
+	public double getPerimeter() {
+		return super.getPerimeter(sides);
+	}
+	
+	public String toString() {
+		return super.toString(sides);
 	}
 
 }
