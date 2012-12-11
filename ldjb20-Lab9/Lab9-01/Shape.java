@@ -1,8 +1,5 @@
 public class Shape {
 
-// 	
-// 	public abstract double area();
-// 	
 	public double getPerimeter(double[] sides) {
 		double perimeter = 0;
 		for (int i = 0; i < sides.length; i++) {
